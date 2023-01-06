@@ -6,21 +6,22 @@
 # Various improvements contributed by Kevin Köck.
 
 import gc
+
 import usocket as socket
 import ustruct as struct
 
 gc.collect()
-from ubinascii import hexlify
 import uasyncio as asyncio
+from ubinascii import hexlify
 
 gc.collect()
-from utime import ticks_ms, ticks_diff
 from uerrno import EINPROGRESS, ETIMEDOUT
+from utime import ticks_diff, ticks_ms
 
 gc.collect()
-from micropython import const
-from machine import unique_id
 import network
+from machine import unique_id
+from micropython import const
 
 gc.collect()
 from sys import platform
